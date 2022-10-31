@@ -1,12 +1,12 @@
 ﻿Console.Clear();
-Console.Write("Сколько элементов Вы хотите ввести? ");
+Console.Write("Введите необходимое количество строк? ");
 
 int value = Convert.ToInt32(Console.ReadLine());
 
 string[] AskArray = new string[value];
 for (int i = 0; i < value; i++)
 {
-    Console.WriteLine($"Введите {i+1}-й элемент: ");
+    Console.WriteLine($"Введите {i+1}-ю строку: ");
     string res = Convert.ToString(Console.ReadLine());
     AskArray[i] = res;
 }
@@ -37,5 +37,5 @@ string PrintArray(string[] array)
     return result;
 }
 
-Console.WriteLine("элементы массива, длина которых меньше либо равна 3 символа:");
+Console.WriteLine("строки, длина которых либо меньше либо равна 3 символа:");
 Console.WriteLine($"{PrintArray(TotalArray)}");
