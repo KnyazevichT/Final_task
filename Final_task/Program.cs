@@ -31,7 +31,7 @@ string PrintArray(string[] array)
     string result = string.Empty;
     for (int i = 0; i < array.Length; i++)
     {
-    Console.Write(array[i] + ", ");
+    Console.Write(array[i] + " ");
     }
 
     return result;
