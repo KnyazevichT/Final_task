@@ -38,5 +38,5 @@ string PrintArray(string[] array)
     return result;
 }
 
-Console.WriteLine("строки, длина которых либо меньше либо равна 3 символа:");
+Console.WriteLine("строки, длина которых меньше либо равна 3 символа:");
 Console.WriteLine($"{PrintArray(TotalArray)}");
