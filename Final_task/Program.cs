@@ -1,9 +1,10 @@
 ﻿Console.Clear();
 Console.Write("Введите необходимое количество строк? ");
 
+string[] AskArray = new string[] { };
 int value = Convert.ToInt32(Console.ReadLine());
 
-string[] AskArray = new string[value];
+AskArray = new string[value]; 
 for (int i = 0; i < value; i++)
 {
     Console.WriteLine($"Введите {i+1}-ю строку: ");
